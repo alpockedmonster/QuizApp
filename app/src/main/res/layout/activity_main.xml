@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF176"
+    android:shape="rectangle"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewCircle"
+        android:layout_width="147dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/imageCircle"
+        app:layout_constraintBottom_toTopOf="@+id/textViewQuestions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375"
+        app:srcCompat="@drawable/icon_circle" />
+
+    <TextView
+        android:id="@+id/textViewQuestions"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="322dp"
+        android:layout_height="114dp"
+        android:background="@drawable/icon_border2"
+        android:text="@string/question"
+        android:textAlignment="center"
+        android:textColor="#353293"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/textViewNumber"
+        android:layout_width="64dp"
+        android:layout_height="60dp"
+        android:text="@string/numberQuestion"
+        android:textColor="#EC353293"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewCircle"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewCircle"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintStart_toStartOf="@+id/imageViewCircle"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCircle"
+        app:layout_constraintVertical_bias="0.681" />
+
+    <TextView
+        android:id="@+id/textViewLife2"
+        android:layout_width="265dp"
+        android:layout_height="76dp"
+        android:text="@string/lives"
+        android:textColor="#D0353293"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/textViewLife"
+        android:layout_width="44dp"
+        android:layout_height="54dp"
+        android:text="@string/life"
+        android:textColor="#D0353293"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLife2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewLife2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewLife2"
+        app:layout_constraintTop_toTopOf="@+id/textViewLife2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="338dp"
+        android:layout_height="219dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestions"
+        app:layout_constraintVertical_bias="0.14">
+
+        <Button
+            android:id="@+id/buttonAnswer1"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/icon_border2"
+            android:onClick="onClick"
+            android:text="@string/answer1"
+            android:textColor="#353293"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038" />
+
+        <Button
+            android:id="@+id/buttonAnswer2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/icon_border2"
+            android:onClick="onClick"
+            android:text="@string/answer2"
+            android:textColor="#353293"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.951"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038" />
+
+        <Button
+            android:id="@+id/buttonAnswer3"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/icon_border2"
+            android:onClick="onClick"
+            android:text="@string/answer3"
+            android:textColor="#353293"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAnswer1"
+            app:layout_constraintVertical_bias="0.454" />
+
+        <Button
+            android:id="@+id/buttonAnswer4"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/icon_border2"
+            android:onClick="onClick"
+            android:text="@string/answer4"
+            android:textColor="#353293"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAnswer2"
+            app:layout_constraintVertical_bias="0.454" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

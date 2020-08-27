@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Квиз</string>
+    <string name="imageLives">Количество жизней</string>
+    <string name="answer1">42</string>
+    <string name="answer2">42</string>
+    <string name="answer3">точно 42</string>
+    <string name="answer4">42!</string>
+    <string name="imageCircle">Граница для номера</string>
+    <string name="numberQuestion">1.</string>
+    <string name="question">В чем смысл жизни?</string>
+    <string name="life">3</string>
+    <string name="lives">Жизней</string>
+    <string name="leftLives">О нет, вы теряете жизнь</string>
+    <string name="game_over">GAME OVER</string>
+    <string name="restart">Попробовать еще?</string>
+    <string name="sad_smile">sadSmile</string>
+    <string name="win">Победа!</string>
+    <string name="winner">Кубок победителя</string>
+</resources>

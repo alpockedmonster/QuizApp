@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_background_for_win"
+    tools:context=".WinActivity">
+
+    <Button
+        android:id="@+id/buttonWin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="onClick"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageViewWinner"
+        android:layout_width="281dp"
+        android:layout_height="354dp"
+        android:contentDescription="@string/winner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWin"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/buttonWin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWin"
+        app:layout_constraintVertical_bias="0.304"
+        app:srcCompat="@drawable/icon_winner" />
+
+    <TextView
+        android:id="@+id/textViewWin"
+        android:layout_width="264dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="105dp"
+        android:text="@string/win"
+        android:textAlignment="center"
+        android:textColor="#036A61"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonWin"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWin"
+        app:layout_constraintStart_toStartOf="@+id/buttonWin"
+        app:layout_constraintTop_toTopOf="@+id/buttonWin"
+        app:layout_constraintVertical_bias="0.113" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
